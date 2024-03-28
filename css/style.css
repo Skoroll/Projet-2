@@ -69,114 +69,202 @@ header {
     margin-top: 0vh;
 
     width: 100%;
-    height: 8vh;
+    height: 79px;
 
 
 }
 
 
 
-header #logoHeader {
+
+#logoHeader {
     display: block;
-margin-top: auto;
-margin-bottom: auto;
-    width: auto;
-    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 61.09px;
+    height: 19px;
 }
 
-.Boutons-Header{
+.Menu{
     margin-left: auto;
+
 }
 
 .btnHeader{
-    margin-right: 1vw;
+
     margin-top: 0;
-    padding-top: 2vh;
     border: none;
     background: none;
+
 }
 
+
 .btnHeader:focus{
-    border-top: 3px solid #0065FC;
+    border-top: 2px solid #0065FC;
     color: #0065FC ;
 }
 
-header #btnTwo {
-    margin-left: 0;
+#btnOne{
+    width: 113px;
+    height: 35px;   
+}
+
+#btnTwo {
+    width: 63px;
+    height: 35px;
 }
 
 
 /****** Nav ***********/
 nav{
-    margin-left: 2vw;
+    width:100%;
+    height:  281px; 
+    display : flex;
+    flex-direction: column;
 }
 
-#labelSB {
-    border-radius: 20% 0% 0% 1vw ;
-    margin-right: 0;
-    margin-right: 0;
-    padding: 1%;
-    background-color: #F2F2F2;
-    border: none;
+.headline {
+    width: 100%;
+    max-height: 53px ;
+    margin-bottom: 35px;
 }
 
-    #mapIcon {
-        width: 1%;
-        height: 1%;
-        color: black;
-    }
+.headline h1 {
+    margin-bottom: 8px;
+    height: 26px;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: left;
 
-#btnsubSB{
-    padding: 1%;
-    background-color: #0065FC  ;
-    border: none;
-    border-radius: 0% 1vw 1vw 0%;
-    color : white;
-    font-weight: bold;
+}
+.headline p {
+    margin: 0;
+    height: 19px;
 }
 
 
-#searchB {
-    padding: 1%;
-    margin-left: 0;
-    margin-right: 0;
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 377px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    opacity: 0px;
+    align-items: flex-end;
 
 }
+
+        #labelSB{
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            min-width: 50px;
+            min-height: 49px;
+            border-radius: 15px 0px 0px 15px;
+            background-color: #F2F2F2 ;
+            width: 50px;
+            height: 49px;
+            margin: 0;
+
+        }
+
+            #mapIcon {
+                display: block;
+                align-items: center;
+                justify-content: center;
+                color: black;
+
+            }
+
+            
+        #btnsubSB{
+            display: flex;
+
+            width: 132px;
+            height: 49px;
+            padding: 15px 16px 15px 16px;
+            background-color: #0065FC  ;
+            border: none;
+            border-radius: 0px 15px 15px 0px;
+            color : white;
+            font-weight: bold;
+            font-size: large;
+            margin: 0;
+
+        }
+
+
+        #searchB {
+            display:flex;
+            width: 195px;
+            height: 29px;
+            padding: 10px;
+            margin: 0;
+            font-weight: bold;
+            border: none;
+
+        }
+
 
 
 /****** Nav filtres ***********/
-.slogan {
-    margin-bottom: 20px;
-}
 
-.slogan h1 {
-    margin-top: 5h;
-    margin-bottom: 0;
-}
-.slogan p {
-    margin-left: 0;
-}
 
 .filtres {
     display: flex;
     flex-direction: row;
-    margin-top: 2vh;
+    margin-top: 30px;
     align-items: center;
+    width:758px;
+    height: 50px;
+    gap: 15px;
+
+
 }
 
 .filtres p{
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
+    margin-left: 0;
+    width: 54px;
+    height: 21px;
+
+
 }
 
+.iconeFiltres{
+    width: 22px;
+    height: 22px;
+}
 .btnFiltres{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
     background: none;
     border: 2px solid #F2F2F2;
-    border-radius: 1.5vw;
-    margin-left: 1vw;
-    font-weight: bold;
-    padding: 10px;
+    border-radius: 25px;
+
+    width:167px;
+height: 50px;
+padding: 4px 19px 4px 19px;
+
+
+font-size: 16px;
+font-weight: 700;
+line-height: 19.96px;
+text-align: left;
+
+
+
+
+
+
 }
 
 .btnFiltres:hover{
@@ -185,10 +273,12 @@ background-color: #DEEBFF;
 
 /****** Nav Info ***********/
 
+
 nav .resultatRecherche {
     display: flex;
     flex-direction: row;
-    margin-top: 3vh;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 nav #infoIcon {
@@ -199,6 +289,9 @@ nav #infoIcon {
 }
 
 nav p {
+
+align-items: flex-end;
+
     font-style: italic;
 }
 
