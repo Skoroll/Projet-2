@@ -24,18 +24,19 @@
     <div class="main-container">
       <header>
         <!--Logo-->
-        <img
-          src="images/logo/Booki.png"
-          id="logoHeader"
-          alt="Logo Booki"
-          title="Logo Booki"
-        />
+
+            <img
+            src="images/logo/Booki.png"
+            id="logoHeader"
+            alt="Logo Booki"
+            title="Logo Booki"/>
+
         <!--Logo-->
 
         <!--Boutons Header-->
         <div class="Menu">
-          <button class="btnHeader" id="btnOne">Hébergements</button>
-          <button class="btnHeader" id="btnTwo">Activités</button>
+          <a href="#hebergements" class="btnHeader">Hébergements</a>
+          <a href="#activites" class="btnHeader">Activités</a>
         </div>
         <!--Boutons Header-->
       </header>
@@ -90,8 +91,8 @@
 
       <main>
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
-            <h2>Hébergements à Marseille</h2>
+          <section id="hebergements">
+            <h1>Hébergements à Marseille</h1>
 
             <!--Carte Herbergement-->
             <div class="conteneurCartes">
@@ -107,7 +108,7 @@
                   />
                   <div class="HebergCnt">
                     <h2>Hôtel du port</h2>
-                    <p>Nuit à partir de 52€</p>
+                    <p>Nuit à partir de 52<span class="euro">€</span></p>
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -134,7 +135,7 @@
                   />
                   <div class="HebergCnt">
                     <h2>Hôtel chez Amina</h2>
-                    <p>Nuits à partir de 96€</p>
+                    <p>Nuits à partir de 96<span class="euro">€</span></p>
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -161,7 +162,7 @@
                   />
                   <div class="HebergCnt">
                     <h2>Hôtel Les mouettes</h2>
-                    <p>Nuits à partir de 76€</p>
+                    <p>Nuits à partir de 76<span class="euro">€</span></p>
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -188,7 +189,7 @@
                   />
                   <div class="HebergCnt">
                     <h2>Hôtel de la mer</h2>
-                    <p>Nuits à partir de 46€</p>
+                    <p>Nuits à partir de 46<span class="euro">€</span></p>
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -216,7 +217,7 @@
                   />
                   <div class="HebergCnt">
                     <h2>Auberge La Canebière</h2>
-                    <p>Nuits à partir de 25€</p>
+                    <p>Nuits à partir de 25<span class="euro">€</span></p>
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -243,7 +244,7 @@
                   />
                   <div class="HebergCnt">
                     <h2>Auberge Le Panier</h2>
-                    <p>Nuits à partir de 23€</p>
+                    <p>Nuits à partir de 23<span class="euro">€</span></p>
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -357,7 +358,7 @@
         </div>
         <!--Activités-->
 
-        <div class="activites">
+        <div id="activites">
           <h1>Activités à Marseille</h1>
           <div class="sectionActiv">
             <!--activité 1-->

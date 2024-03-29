@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+h1{
+font-size: 22px;
+font-weight: 700;
+}
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -68,16 +72,10 @@ a {
 header {
     display: flex;
     flex-direction: row;
-    margin-top: 0vh;
-
+    margin-top: 0;
     width: 100%;
     height: 79px;
-
-
 }
-
-
-
 
 #logoHeader {
     display: block;
@@ -90,25 +88,22 @@ header {
 .Menu{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     margin-left: auto;
     width: 244px;
     height: 35px;
-    padding: 0px 50px 0px 50px;
+
     gap: 68px;
 }
 
 .btnHeader{
-
     margin-top: 0;
     border: none;
     background: none;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
     text-align: center;
-
-
+    padding: 0;
+    padding-top: 20px;
 
 }
 
@@ -118,17 +113,6 @@ header {
     color: #0065FC ;
 }
 
-#btnOne{
-    width: 113px;
-    height: 35px;   
-}
-
-#btnTwo {
-    width: 63px;
-    height: 35px;
-    margin-right: 0;
-    
-}
 
 
 /****** Nav ***********/
@@ -145,21 +129,10 @@ nav{
     margin-bottom: 35px;
 }
 
-.headline h1 {
-    margin-bottom: 8px;
-    height: 26px;
-    font-family: Raleway;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 25.83px;
-    text-align: left;
-
-}
 .headline p {
     margin: 0;
     height: 19px;
 }
-
 
 .searchbar{
     display: flex;
@@ -170,7 +143,6 @@ nav{
     border-radius: 15px;
     border: 1px solid #F2F2F2;
     align-items: flex-end;
-
 }
 
         #labelSB{
@@ -185,7 +157,6 @@ nav{
             width: 50px;
             height: 49px;
             margin: 0;
-
         }
 
             #mapIcon {
@@ -193,15 +164,14 @@ nav{
                 align-items: center;
                 justify-content: center;
                 color: black;
-
             }
 
             
         #btnsubSB{
             display: flex;
-
             width: 132px;
             height: 49px;
+            margin: 0;
             padding: 15px 16px 15px 16px;
             background-color: #0065FC  ;
             border: none;
@@ -209,8 +179,6 @@ nav{
             color : white;
             font-weight: bold;
             font-size: large;
-            margin: 0;
-
         }
 
 
@@ -218,11 +186,10 @@ nav{
             display:flex;
             width: 195px;
             height: 29px;
-            padding: 10px;
             margin: 0;
+            padding: 10px;
             font-weight: bold;
             border: none;
-
         }
 
 
@@ -238,8 +205,6 @@ nav{
     width:758px;
     height: 50px;
     gap: 15px;
-
-
 }
 
 .filtres p{
@@ -249,14 +214,13 @@ nav{
     margin-left: 0;
     width: 54px;
     height: 21px;
-
-
 }
 
 .iconeFiltres{
     width: 22px;
     height: 22px;
 }
+
 .btnFiltres{
     display: flex ;
     flex-direction: row;
@@ -264,22 +228,12 @@ nav{
     background: none;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
-
     width:167px;
-height: 50px;
-padding: 4px 19px 4px 19px;
-
-
-font-size: 16px;
-font-weight: 700;
-line-height: 19.96px;
-text-align: left;
-
-
-
-
-
-
+    height: 50px;
+    padding: 4px 19px 4px 19px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.96px;
 }
 
 .btnFiltres:hover{
@@ -290,8 +244,6 @@ background-color: #DEEBFF;
 
 
  .resultatRecherche {
-
-
     font-weight: normal;
     margin-top: 40px;
 }
@@ -300,12 +252,9 @@ background-color: #DEEBFF;
     color:blue;
     margin-top: auto;
     margin-bottom: auto;
-
 }
 
 nav p {
-
-align-items: flex-end;
 
     font-style: italic;
 }
@@ -316,10 +265,9 @@ align-items: flex-end;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-
     width: 100%;
-height: 614px;
-gap: 40px;
+    height: 614px;
+    gap: 40px;
 
 
 }
@@ -332,19 +280,10 @@ gap: 40px;
 }
 
 /****** Hebergements ***********/
-.hebergements {
-
+#hebergements {
     width: 65%;
-
 }
 
-.hebergements h1 {
-
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 25.83px;
-
-}
 
 .conteneurCartes {
     display: flex;
@@ -362,7 +301,6 @@ gap: 40px;
         border-radius: 20px 20px 20px 20px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         gap: 4px;
-
     }
 
         .imgLoc {
@@ -371,56 +309,46 @@ gap: 40px;
             height: 124px;
             gap: 0px;
             border-radius: 20px 20px 0px 0px; 
-            
-
-
         }
 
-            .HerbergCnt{
-                
+            .HerbergCnt{  
                 width: 250.33px;
                 height: 64.25px;
                 padding: 0px 15px 0px 15px;
                 gap: 8px;
             }
 
-                .conteneurCartes h2, p  {
-
+                .conteneurCartes h2{
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 18.78px;
-                text-align: left;
-
                 }
 
                 .conteneurCartes p {
-
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 16.44px;
-                text-align: left;
-
                 }
 
 
                     .conteneurCartes .card-rating {
                         height: 13.25px;
                         padding: 0px;
-
-                        
+                        margin-bottom: 5px; 
                     }
 
 .bottomTxt{
     display: block;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+
 }
+
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
-
 
 .populaires-title {
     display: flex;
@@ -459,7 +387,6 @@ gap: 40px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.44px;
-    text-align: left;
 }
 
 .populaires-cards .card-rating {
@@ -467,23 +394,24 @@ gap: 40px;
 }
 
 /****** Activités ***********/
-.activites {
-
-
-    width: 1340px;
-    height: 559.02px;
+#activites {
+    max-width: 1340px;
+    max-height: 559.02px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    gap: 30px;
-    padding: 30px
+    padding: 30px;
 }
 
 .sectionActiv{
     display: flex;
     flex-direction: row;
-   width:1,280px;
-height: 439px;
-gap: 30px;
+    width: 100%;
+    height: 439px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    gap: 5px;
 }
 
 .carteActi {
@@ -492,28 +420,19 @@ gap: 30px;
     border-radius: 20px 20px 20px 20px;
     width: 297.5px;
     height: 439px;
-
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    align-items: center;
-
 }
 
 .ActviCnt{
     width: 297.5px;
-height: 59px;
-padding: 20px 19px 20px 19px;
-gap: 10px;
+    height: 59px;
+    padding: 20px 19px 20px 19px;
 
-
-}
+    }
 .ActviCnt h3{
-
 font-size: 16px;
 font-weight: 700;
 line-height: 18.78px;
-
-
-
 }
 
 .activiteImage{
@@ -533,17 +452,12 @@ footer{
     display: flex;
     flex-direction: row;
     background-color:   #F2F2F2;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
     width: 1340px;
     height: 163px;
-
-
-
-
-
-
 }
 
 .about .nosHebergements .assistance {
