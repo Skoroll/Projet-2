@@ -15,6 +15,7 @@
 
 body {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     margin: 0;
@@ -148,7 +149,9 @@ header {
             margin: 0;
             height: 19px;
         }
-
+.divSB {
+margin-left: 20px;
+}
 .searchbar{
     display: flex;
     flex-direction: row;
@@ -224,7 +227,8 @@ header {
                 height: 29px;
                 margin: 0;
                 padding: 10px;
-                font-weight: bold;
+                font-weight: bolder;
+                font-size: large;
                 border: none;
             }
 
@@ -240,8 +244,6 @@ header {
     flex-direction: row;
     margin-top: 30px;
     align-items: center;
-    width:758px;
-    height: 50px;
     gap: 15px;
 }
 
@@ -252,6 +254,11 @@ header {
         margin-left: 0;
 
         height: 21px;
+    }
+
+    .divBtnFiltres {
+        display: flex;
+        flex-direction: row;
     }
 
     .iconeFiltres{
@@ -289,9 +296,14 @@ background-color: #DEEBFF;
 }
 
         #infoIcon {
-            color:blue;
+
+            border: #F2F2F2 2px solid;
             margin-top: auto;
             margin-bottom: auto;
+            color:blue;
+            padding: 5px 9px 5px 9px;
+            border-radius: 50%;
+            margin-right: 8px;
         }
 
         nav p {
@@ -382,7 +394,7 @@ background-color: #DEEBFF;
 .bottomTxt{
     display: block;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 50px;
 
 }
 
@@ -463,24 +475,25 @@ margin: 0;
 }
 
 .ActviCnt{
-    width: 297.5px;
+    width: 100%;
     height: 59px;
     padding: 20px 19px 20px 19px;
+    overflow-wrap: break-word;
 
     }
 .ActviCnt h3{
-font-size: 16px;
-font-weight: 700;
-
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .activiteImage{
     display: block;
     object-fit: cover;
     border-radius: 20px 20px 0 0 ;
-    width: 95%;
+    width: 100%;
     height: 350px;
-    margin-top: 5px;
     margin-left: auto;
     margin-right:auto ;
 }
@@ -517,12 +530,33 @@ margin: 0;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    body {
-        display: block;
-    }
 
+   .main-container {
+        max-width: 1024px;
+        min-width: 768px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+    header {
+        max-width: 1024px;
+    }
+
+    .filtres {
+        flex-direction: column;
+        gap: 0px
+    }
+
+    #filtresTitle {
+        margin-left: 0;
+        margin-right: auto
+    }
+
+    .divBtnFiltres {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 0;
     }
 
     #hebergements {
@@ -558,8 +592,12 @@ margin: 0;
         padding: 0;
     }
 
+    #activites h1 {
+        margin-left: 40px;
+    }
+
     .carteActi{
-        width: 20vw;
+        width: 19vw;
         height: 270px;
     }
 
@@ -570,9 +608,141 @@ margin: 0;
     .sectionActiv {
         height: auto;
     }
+
+    .ActviCnt {
+        padding: 20px 0 20px 0;
+    }
+
+
+    .ActviCnt h3 {
+        margin: 0;  
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body {
+        width: 100%;
+        max-width: 767px;
+        min-width: 767px;
+        margin: 0;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .btnHeader {
+        margin-top: 0;
+        border: none;
+        background: none;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .btnHeader:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC ;
+    }
+
+    main {
+        width: 100%;
+        
+    }
+    .main-container {
+        width: 100%;
+        padding: 50px;
+        
+    }
+
+    .divFiltres {
+    height :30vh ;
+    }
+    .filtres{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    }
+
+    #filtresTitle {
+        display: block;
+        margin-left: 0;
+    }
+
+    .divBtnFiltres {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filtres {
+        align-items: flex-start;
+    }
+
+    .btnFiltres  {
+        width: 35%;
+        justify-content: center;
+    }
+
+    .resultatRecherche {
+        margin-top: 13vh;
+    }  
+
+    .hebergements-and-populaires{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 6vh;
+        width: 100%;
+    }
+    
+    #hebergements{
+        width: 100%;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .sectionActiv {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .carteActi {
+        width: 100%;
+    }
+
+    footer {
+    flex-direction: column;
+    margin-top: 80vh;
+    height: auto;
+    }
 }
