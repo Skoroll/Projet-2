@@ -90,7 +90,7 @@ header {
             display: block;
             margin-top: auto;
             margin-bottom: auto;
-            width: 61.09px;
+            width: 61px;
             height: 19px;
         }
 
@@ -98,25 +98,22 @@ header {
             display: flex;
             flex-direction: row;
             margin-left: auto;
-            width: 244px;
-            height: 35px;
             gap: 68px;
             
         }
 
-                .btnHeader{
+                .btn-header{
+
                     margin-top: 0;
                     border: none;
                     background: none;
-                    font-size: 16px;
-                    font-weight: 400;
                     text-align: center;
-                    padding: 0;
                     padding-top: 20px;
+                    
+
                 }
 
-
-                .btnHeader:hover{
+                .btn-header:hover{
                     border-top: 2px solid #0065FC;
                     color: #0065FC ;
                 }
@@ -130,9 +127,9 @@ header {
 
 
 
-.divFiltres {
+.div-filters {
     width:100%;
-    height:  281px; 
+
     display : flex;
     flex-direction: column;
 }
@@ -147,23 +144,24 @@ header {
         }
         .headline p {
             margin: 0;
-            height: 19px;
         }
 .divSB {
 margin-left: 20px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
 }
 .searchbar{
     display: flex;
     flex-direction: row;
     justify-content: right;
     width: 377px;
-    height: 49px;
     border-radius: 15px;
     border: 1px solid #F2F2F2;
     align-items: flex-end;
 }
 
-        #labelSB{
+        #label-SB{
             display: flex;
 
             align-items: center;
@@ -184,8 +182,7 @@ margin-left: 20px;
                 color: black;
             }
 
-            
-            #btnsubSB{
+            #btn-sub-SB{
                 display: flex;
                 width: 132px;
                 height: 49px;
@@ -199,27 +196,10 @@ margin-left: 20px;
                 font-size: large;
             }
 
-            #btnLoupe {
+            #btn-lens {
                 display: none;
-                position: relative;
-                width: 132px;
-                height: 49px;
-                margin: 0;
-                padding: 15px 16px 15px 16px;
-                background-color: #0065FC  ;
-                border: none;
-                border-radius: 0px 15px 15px 0px;
-                color : white;
-                font-weight: bold;
-                font-size: large; 
-            }
-            .fa-magnifying-glass{
-                display: none;
-                background-color: none;
-                color: black;
-                position : absolute;
-            }
 
+            }
 
             #searchB {
                 display:flex;
@@ -235,11 +215,11 @@ margin-left: 20px;
 
 
 
-/****** Nav filtres ***********/
+/****** filtres ***********/
 
 
 
-.filtres {
+.filters {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -247,18 +227,17 @@ margin-left: 20px;
     gap: 15px;
 }
 
-    .filtres p{
+    .filters p{
         text-decoration: none;
         font-style: normal;
         font-weight: bold;
         margin-left: 0;
-
-        height: 21px;
     }
 
-    .divBtnFiltres {
+    .div-btn-filters {
         display: flex;
         flex-direction: row;
+        gap: 10px;
     }
 
     .iconeFiltres{
@@ -266,22 +245,23 @@ margin-left: 20px;
         height: 22px;
     }
 
-    .btnFiltres{
+    .btn-filters{
         display: flex ;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         background: none;
         border: 2px solid #F2F2F2;
-        border-radius: 25px;
+        border-radius: 6vh;
         width:167px;
         height: 50px;
-        padding: 4px 19px 4px 19px;
+        padding: 5px;
         font-size: 16px;
         font-weight: 700;
 
     }
 
-.btnFiltres:hover{
+.btn-filters:hover{
 background-color: #DEEBFF;
 }
 
@@ -290,9 +270,9 @@ background-color: #DEEBFF;
 /****** Nav Info ***********/
 
 
- .resultatRecherche {
+ .search-result {
     font-weight: normal;
-    margin-top: 40px;
+
 }
 
         #infoIcon {
@@ -304,6 +284,7 @@ background-color: #DEEBFF;
             padding: 5px 9px 5px 9px;
             border-radius: 50%;
             margin-right: 8px;
+            font-size: 12px;
         }
 
         nav p {
@@ -315,7 +296,6 @@ background-color: #DEEBFF;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
     gap: 40px;
 
 
@@ -338,18 +318,19 @@ background-color: #DEEBFF;
     margin-bottom: 25px;
 }
 
-.conteneurCartes {
+.card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: c;
     gap: 15px
 }
 
-    .carte {
+    .host-card {
         justify-content: space-around;
         padding: 5px;
         width:30%;
-        height: 207px;
+        
         background-color: white;
         border-radius: 20px 20px 20px 20px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -365,19 +346,18 @@ background-color: #DEEBFF;
         }
 
             .HerbergCnt{  
-                width: 250.33px;
-                height: 64.25px;
+                width: 250px;
                 padding: 0px 15px 0px 15px;
                 gap: 8px;
             }
 
-                .conteneurCartes h2{
+                .card-container h2{
                 font-size: 16px;
                 margin: 5px 0 0 0;
              
                 }
 
-                .conteneurCartes p {
+                .card-container p {
                 font-size: 14px;
                 margin: 5px 0 5px 0;
 
@@ -385,8 +365,8 @@ background-color: #DEEBFF;
                 }
 
 
-                    .conteneurCartes .card-rating {
-                        height: 13.25px;
+                    .card-container .card-rating {
+                        height: 13px;
                         padding: 0px;
                         margin-bottom: 5px; 
                     }
@@ -446,8 +426,6 @@ margin: 0;
 
 /****** Activités ***********/
 #activites {
-
-    height: 559.02px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -458,33 +436,30 @@ margin: 0;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 439px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
     gap: 5px;
 }
 
-.carteActi {
+.activity-card {
     margin: 1vh 1vw;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     width: 297.5px;
-    height: 439px;
+    height: auto ;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .ActviCnt{
     width: 100%;
-    height: 59px;
-    padding: 20px 19px 20px 19px;
+    padding: 20px;
     overflow-wrap: break-word;
 
     }
 .ActviCnt h3{
     font-size: 16px;
     font-weight: 700;
-    padding-left: 20px;
     padding-right: 20px;
 }
 
@@ -514,15 +489,17 @@ footer h4 {
 font-size: 18px;
 margin: 0;
 }
-
-.about, .nosHebergements, .assistance {
+.about, .our-host, .assistance {
     display: flex;
     flex-direction: column;
-    width: 446.67px;
+    width: 33%;
     padding: 20px;
     gap: 15px;
-
 }
+
+
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -534,6 +511,7 @@ margin: 0;
    .main-container {
         max-width: 1024px;
         min-width: 768px;
+        width: 100%;
     }
     .hebergements-and-populaires {
         flex-direction: column;
@@ -543,7 +521,7 @@ margin: 0;
         max-width: 1024px;
     }
 
-    .filtres {
+    .filters {
         flex-direction: column;
         gap: 0px
     }
@@ -553,7 +531,7 @@ margin: 0;
         margin-right: auto
     }
 
-    .divBtnFiltres {
+    .div-btn-filters {
         margin-left: 0;
         margin-right: auto;
         margin-top: 0;
@@ -561,11 +539,11 @@ margin: 0;
 
     #hebergements {
         width: 100%;
+        margin-top: 10px;
     }
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -588,7 +566,6 @@ margin: 0;
 
     #activites {
         width: auto;
-        height: 390px;
         padding: 0;
     }
 
@@ -596,9 +573,8 @@ margin: 0;
         margin-left: 40px;
     }
 
-    .carteActi{
+    .activity-card{
         width: 19vw;
-        height: 270px;
     }
 
     .activiteImage {
@@ -625,124 +601,178 @@ margin: 0;
     body {
         width: 100%;
         max-width: 767px;
-        min-width: 767px;
+        min-width: 320px;
         margin: 0;
 
+    }
+
+    .main-container {
+        max-width: 767px;
+        min-width: 320px;
+        width: 100%;
+        padding: 50px 0 0 0;
     }
 
     header {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     nav {
+        width: 100%;
         margin: 0;
+        gap: 0px;
     }
 
-    .btnHeader {
+    .btn-header {
         margin-top: 0;
         border: none;
         background: none;
-        font-size: 16px;
-        font-weight: 400;
+        width: 50%;
         text-align: center;
-        padding: 0;
-        padding-bottom: 20px;
+        padding: 0 12.5% 0 12.5%;
+        border-bottom: 2px solid #F2F2F2;
     }
 
-    .btnHeader:hover{
+    .btn-header:hover{
         border-top: none;
         border-bottom: 2px solid #0065FC;
         color: #0065FC ;
     }
 
+.div-filters {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+    .searchbar {
+        width: 100%;
+    }
+
+    #btn-sub-SB {
+        display: none;
+    }
+
+    #searchB {
+        width: 90%;
+    }
+
+    #btn-lens {
+        display: flex;
+        width: 50px;
+        height: 49px;
+        margin: 0;
+        background-color: #0065FC  ;
+        border: none;
+        border-radius: 15px;
+        color : white;
+        font-weight: bold;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+    }
     main {
         width: 100%;
         
     }
-    .main-container {
-        width: 100%;
-        padding: 50px;
-        
+
+    .headline {
+
     }
 
-    .divFiltres {
-    height :30vh ;
-    }
-    .filtres{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    .divSB {
+        width: 90%;
     }
 
-    #filtresTitle {
-        display: block;
-        margin-left: 0;
+    .filters{
+        padding-left: 30px;
     }
 
-    .divBtnFiltres {
+    .div-btn-filters {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        gap: 30px;
     }
 
-    .filtres {
-        align-items: flex-start;
-    }
 
-    .btnFiltres  {
+    .btn-filters  {
         width: 35%;
         justify-content: center;
     }
 
-    .resultatRecherche {
-        margin-top: 13vh;
-    }  
-
     .hebergements-and-populaires{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 6vh;
         width: 100%;
     }
     
-    #hebergements{
-        width: 100%;
-    }
-
-    .carte {
-        width: 100%;
+    .hebergements-and-populaires section {
+        border-radius: 0;
     }
 
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: column;
+        #hebergements{
+            width: 100%;
+            background: none;
+        }
 
-    }
+            .host-card {
+                width: 100%;
+            }
 
-    .card {
-        width: 100%;
-    }
 
-    .populaires-cards a {
-        width: 100%;
-    }
+        .populaires {
+            margin-top: 5px;
+        }
 
-    .sectionActiv {
+            .populaires-cards {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .populaires-cards a {
+                width: 100%;
+            }
+
+
+
+        #activites {
+            padding: 0 30px 0 30px;
+        }
+
+            #activites h1 {
+                margin-left: 0;
+            }
+
+            .sectionActiv {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .activity-card {
+                width: 100%;
+            }
+
+    footer {
         flex-direction: column;
         height: auto;
     }
 
-    .carteActi {
-        width: 100%;
-    }
+    .about, .our-host, .assistance {
+        width: auto;
 
-    footer {
-    flex-direction: column;
-    margin-top: 80vh;
-    height: auto;
     }
 }
