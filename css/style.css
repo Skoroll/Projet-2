@@ -100,6 +100,17 @@ ul {
 ul li {
     padding-top: 15px;
 }
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 68px;
+            margin-top: 0 ;
+        }
+
+                ul li{
+                    padding-top: 15px;
+                }
 
 ul li:hover {
     border-top: 2px solid #0065FC;
@@ -235,12 +246,33 @@ ul li:hover {
     margin: 0;
     padding: 10px 0 10px 0;
 }
+    .btn-filters{
+        display: flex ;
+        align-items: baseline;
+        justify-content: center;
+        background: none;
+        border: 1px solid #F2F2F2;
+        border-radius: 6vh;
+        width:150px;
+ 
+
+    }
+
+    .btn-filters p {
+        margin: 0;
+        padding: 7px 0 7px 0;
+    }
 
 .btn-filters:hover {
     background-color: #DEEBFF;
     cursor: pointer;
 }
+    .btn-filters:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+    }
 
+.search-result {
 .search-result {
     font-weight: normal;
 
@@ -287,6 +319,7 @@ ul li:hover {
 }
 
 #hebergements .section-title {
+    margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
@@ -410,6 +443,9 @@ ul li:hover {
 #activites .section-title {
     margin: 10px 0 10px 15px;
 }
+#activites .section-title {
+    margin: 10px 0 10px 15px ;
+}
 
 #activites h1 {
     margin-left: 15px;
@@ -520,6 +556,10 @@ footer h4 {
         margin-top: 20px;
     }
 
+    .bottomTxt{
+        margin-top: 20px;
+    }
+    
 
     .populaires {
         width: 100%;
@@ -555,6 +595,10 @@ footer h4 {
 
     #activites .section-title {
         margin: 30px 0 10px 35px;
+    }
+
+    #activites .section-title {
+        margin: 30px 0 10px 35px ;
     }
 
     #activites h1 {
@@ -635,6 +679,21 @@ footer h4 {
         padding: 0 10% 15px 10%;
         border-bottom: 2px solid #F2F2F2;
     }
+        ul {
+            width: 100%;
+            margin: 0;
+            gap: 0px;
+            padding: 0;
+        }
+        ul li{
+            margin-top: 0;
+            border: none;
+            background: none;
+            width: 50%;
+            text-align: center;
+            padding: 0 10% 15px 10%;
+            border-bottom: 2px solid #F2F2F2;
+        }
 
     ul li:hover {
         border-top: none;
@@ -707,6 +766,8 @@ footer h4 {
     .div-btn-filters {
         display: flex;
         justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
         margin-left: auto;
         margin-right: auto;
 
@@ -717,8 +778,14 @@ footer h4 {
         min-width: 125px;
     }
 
+    .btn-filters {
+        max-width: 150px;
+        min-width: 125px;
+    }
+
     #filtersTitle {
         display: flex;
+
 
     }
 
@@ -735,6 +802,7 @@ footer h4 {
     .hebergements-and-populaires section {
         border-radius: 0;
         padding: 15px;
+        padding: 15px;
     }
 
 
@@ -746,6 +814,18 @@ footer h4 {
         padding: 0 15px;
         margin-bottom: 20px;
     }
+        #hebergements{
+            width: 100%;
+            background: none;
+            margin: 0;
+            padding-top: 0;
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+
+        #hebergements .section-title {
+            margin: 0;
+        }
 
     #hebergements .section-title {
         margin: 0;
@@ -755,6 +835,10 @@ footer h4 {
         margin-top: 15px;
         gap: 20px
     }
+        .card-container{
+            margin-top: 15px;
+            gap : 20px
+        }
 
     .host-card {
         width: 100%;
@@ -769,6 +853,10 @@ footer h4 {
         display: block;
 
 
+            .populaires-cards {
+                display: block;
+
+
 
     }
 
@@ -777,6 +865,11 @@ footer h4 {
         margin-top: 20px;
 
     }
+            .populaires-cards .card {
+                width: 100%;
+                margin-top: 20px;
+
+            }
 
     .populaires-cards a {
         width: 100%;
@@ -789,6 +882,10 @@ footer h4 {
         padding: 0 30px 0 30px;
         margin-top: 50px;
     }
+        #activites {
+            padding: 0 30px 0 30px;
+            margin-top: 50px;
+        }
 
     #activites h1 {
         margin-left: 0;
@@ -810,6 +907,7 @@ footer h4 {
     footer {
         flex-direction: column;
         height: auto;
+        padding-left: 20px;
         padding-left: 20px;
     }
 
