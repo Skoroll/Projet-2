@@ -289,7 +289,7 @@ cursor: pointer;
 }
 
 #hebergements .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #hebergements h1 {
@@ -408,6 +408,9 @@ margin: 0;
     margin-right: auto;
     padding: 30px;
 }
+#activites .section-title {
+    margin: 10px 0 10px 15px ;
+}
 
 #activites h1 {
     margin-left: 15px;
@@ -507,8 +510,12 @@ margin: 0;
 
     #hebergements {
         width: 100%;
-        margin-top: 10px;
     }
+
+    .bottomTxt{
+        margin-top: 20px;
+    }
+    
 
     .populaires {
         width: 100%;
@@ -540,6 +547,10 @@ margin: 0;
     #activites {
         width: auto;
         padding: 0;
+    }
+
+    #activites .section-title {
+        margin: 30px 0 10px 35px ;
     }
 
     #activites h1 {
@@ -673,14 +684,6 @@ margin: 0;
         
     }
 
-    .headline h1 {
-    font-size: 20px;
-    }
-
-    .headline p {
-        font-size: 15px;
-    }
-
     .divSB {
         width: 100%;
         margin-left: auto;
@@ -691,7 +694,7 @@ margin: 0;
 
     .div-btn-filters {
         display: grid;
-        grid-template-columns: 150px  ;
+        grid-template-columns: 150px 150px;
         grid-template-rows: 50px 50px 50px;
         justify-content: center;
         margin-left: auto;
@@ -716,6 +719,7 @@ margin: 0;
     
     .hebergements-and-populaires section {
         border-radius: 0;
+        padding: 15px;
     }
 
 
@@ -728,8 +732,13 @@ margin: 0;
             margin-bottom: 20px;
         }
 
+        #hebergements .section-title {
+            margin: 0;
+        }
+
         .card-container{
             margin-top: 15px;
+            gap : 20px
         }
 
             .host-card {
@@ -742,16 +751,16 @@ margin: 0;
         }
 
             .populaires-cards {
-                display: flex;
-                flex-direction: column;
-                margin-top: 20px;
-                gap: 10px;
+                display: block;
+
+
 
             }
 
             .populaires-cards .card {
                 width: 100%;
-                margin: 0;
+                margin-top: 20px;
+
             }
 
             .populaires-cards a {
@@ -763,6 +772,7 @@ margin: 0;
 
         #activites {
             padding: 0 30px 0 30px;
+            margin-top: 50px;
         }
 
             #activites h1 {
@@ -785,6 +795,7 @@ margin: 0;
     footer {
         flex-direction: column;
         height: auto;
+        padding-left: 20px;
     }
 
     .about, .our-host, .assistance {
